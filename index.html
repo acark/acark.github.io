@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kaan Acar | AboutMe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">About<span class="logo-span">Me.</span></h1>
+      <div class="nav-links">
+        <button onclick="scrollToSection('about')">About</button>
+        <button onclick="scrollToSection('education')">Education</button>
+        <button onclick="scrollToSection('experience')">Experience</button>
+        <button onclick="scrollToSection('talents')">Talents</button>
+        <button onclick="scrollToSection('contact')">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="about">
+    <div class="hero-content">
+      <p class="welcome-text">Hello, Welcome</p>
+      <h2 class="hero-title" data-wait="3000" data-words='["My name is Kaan","I`m a Mobile App Developer"]'></h2>
+      <p class="hero-subtitle">Software Engineer | React Native | AI & Web3 Enthusiast</p>
+      <a href="#contact" class="btn btn-primary">Contact Me</a>
+      <a href="https://github.com/acark" class="btn btn-secondary"> <img src="./assets/img/github.svg" alt="GitHub" class="github-icon" />GitHub</a>
+    </div>
+    <div class="photo-container">
+        <img src="./assets/img/me.jpeg" class = "landing-page-img">
+    </div>
+  </header>
+
+  <div class="content">
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="content-container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item left">
+            <div class="timeline-year-circle">2016-2021</div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="card-icon">
+                  <i class="material-icons">school</i>
+                </div>
+                <h3>Istanbul Technical University</h3>
+              </div>
+              <p class="timeline-education-type">Bachelor</p>
+              <p class="timeline-departmant">Electronics and Communication Engineering</p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-year-circle">2022-2025</div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="card-icon">
+                  <i class="material-icons">school</i>
+                </div>
+                <h3>Eötvös Loránd University, Budapest</h3>
+              </div>
+              <p class="timeline-education-type">Master Studies</p>
+              <p class="timeline-departmant">Computer Science</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="content-container">
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+          <div class="timeline-item left">
+            <div class="timeline-year-circle">2020</div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="card-icon">
+                  <i class="material-icons">work</i>
+                </div>
+                <h3>HAVELSAN</h3>
+              </div>
+              <p class="timeline-education-type">Internship (2 Months)</p>
+              <p class="timeline-departmant">Worked as DevOps engineer.</p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-year-circle">2021-2024</div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="card-icon">
+                  <i class="material-icons">work</i>
+                </div>
+                <h3>Mep Sistem Bilişim Teknolojileri</h3>
+              </div>
+              <p class="timeline-education-type">Software Developer (3 Years)</p>
+              <p class="timeline-departmant">Developed enterprise solutions for GIS applications.</p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-year-circle">2024-2025</div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="card-icon">
+                  <i class="material-icons">work</i>
+                </div>
+                <h3>Atmosware</h3>
+              </div>
+              <p class="timeline-education-type">Software Developer (6 Months)</p>
+              <p class="timeline-departmant">Worked on Internal Hr mobile application.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TALENTS SECTION -->
+    <section class="section talents-section" id="talents">
+      <div class="content-container">
+        <h2 class="section-title">Talents</h2>
+        <div class="talent-list">
+          <span class="talent">React Native</span>
+          <span class="talent">React</span>
+          <span class="talent">Xamarin.Forms</span>
+          <span class="talent">Javascript</span>
+          <span class="talent">HTML & CSS</span>
+          <span class="talent">Python</span>
+          <span class="talent">GIS</span>
+          <span class="talent">ArcGIS</span>
+          <span class="talent">Django</span>
+          <span class="talent">.NET</span>
+          <span class="talent">Machine Learning</span>
+          <span class="talent">Backend Development</span>
+          <span class="talent">UI/UX Design</span>
+          <span class="talent">Git & DevOps</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ... Add your Contact or other sections as desired ... -->
+
+  </div>
+
+  <script src="./src/script.js"></script>
+</body>
+</html>

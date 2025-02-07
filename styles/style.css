@@ -1,0 +1,321 @@
+/* General Styles */
+body {
+    background-color: #1a202c;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* Navbar */
+  .navbar {
+    background-color: #2d3748;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+
+  .container {
+    max-width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #facc15;
+  }
+
+  .logo > .logo-span {
+    color: #fff;
+  }
+
+  .nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+
+  .nav-links button:hover {
+    color: #facc15;
+  }
+
+  /* Hero */
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0px;
+  }
+
+  .hero-content {
+    flex:  1;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo-container{
+    flex: 1;
+    justify-content:  center;
+    align-items:  center;
+  }
+
+  .landing-page-img{
+    width: auto;
+    height: 60vh;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(255,255,255,1);
+   -moz-box-shadow: 0px 0px 18px 1px rgba(255,255,255,1);
+    box-shadow: 0px 0px 7px 0.5px rgba(255,255,255,1);
+  }
+
+  .welcome-text {
+    color: #facc15;
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  .hero-subtitle {
+    color: #a0aec0;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 10px;
+    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+
+  .github-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .hero-title > .animated-txt{
+    border-right : 0.15rem solid #777777;
+  }
+
+  .btn-primary {
+    background-color: #facc15;
+    color: black;
+  }
+
+  .btn-primary:hover {
+    background-color: #eab308;
+  }
+
+  .btn-secondary {
+    background-color: #4a5568;
+    color: white;
+  }
+
+  .btn-secondary:hover {
+    background-color: #2d3748;
+  }
+
+  /* Section general */
+  .section {
+    width: 100%;
+    padding: 60px 20px;
+    position: relative;
+  }
+
+  .section .content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  #education .section-title{
+    color: #2d3748;
+  }
+
+  /* Education light background */
+  .education-section {
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* Experience matching the body background */
+  .experience-section {
+    background-color: #1a202c;
+    color: #fff;
+  }
+
+  /* ===== Timeline ===== */
+  .timeline-wrapper {
+    position: relative;
+    padding: 20px 0;
+  }
+
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #4a5568;
+    border-radius: 1px;
+    z-index: 1;
+  }
+
+  .timeline-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .timeline-item {
+    width: 45%;
+    float: left;
+    margin-bottom: 60px;
+    position: relative;
+    clear: both;
+    z-index: 2;
+  }
+
+  .timeline-header{
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+  }
+
+  /* Right-floating item */
+  .timeline-item.right {
+    float: right;
+    text-align: left;
+  }
+
+  /* Pill for the year on the line */
+  .timeline-year-circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-color: #facc15;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    z-index: 3;
+  }
+
+  /* Card content */
+  .timeline-content {
+    background-color: #2d3748;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .timeline-education-type{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  /* For the education section's card color, if you want to override the dark background: */
+  .education-section .timeline-content {
+    background-color: #2d3748;
+    color: #fff;
+  }
+
+  .card-icon {
+    color: #facc15;
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h3 {
+    color: #facc15;
+    margin-left: 0.6rem;
+  }
+
+  /* ===== Talents Section ===== */
+  .talents-section {
+    background-color: #2d3748; /* or #1a202c, up to you */
+    color: #fff;
+  }
+
+  .talent-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .talent {
+    background-color: #6b46c1; /* a purple shade */
+    color: #e9d8fd;           /* lighter purple text */
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline-item {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+    .timeline-item .right {
+      float: none;
+    }
+    .timeline-year-circle {
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    .timeline-content {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .photo-container{
+      display: none;
+    }
+    .nav-links {
+      display: none;
+    }
+    .container{
+      justify-content: center;
+    }
+    .timeline-line{
+      display: none;
+    }
+  }
