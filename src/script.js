@@ -23,9 +23,9 @@ class TypeWriter {
     this.txtElement.innerHTML = `<span class="animated-txt">${this.txt}</span>`;
 
     //type speed
-    let typeSpeed = 300;
+    let typeSpeed = 150;
     if (this.isDeleting) {
-      typeSpeed /= 2;
+      typeSpeed /= 1.5;
     }
 
     //pause effect at the end
@@ -33,7 +33,7 @@ class TypeWriter {
       typeSpeed = this.wait;
       this.isDeleting = true;
     } else if (this.isDeleting && this.txt === "") {
-      typeSpeed = 500;
+      typeSpeed = 400;
       this.isDeleting = false;
       this.wordIndex++;
     }
